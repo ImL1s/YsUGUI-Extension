@@ -9,7 +9,7 @@ using System.Collections;
 
 public class Spin3D : MonoBehaviour
 {
-
+    public float spinSpeed = 5;
     private Vector3 previousV3 = default(Vector3);
     private Vector3 orginal;
 
@@ -18,12 +18,12 @@ public class Spin3D : MonoBehaviour
         if (Input.mousePosition.x > orginal.x + 5f)
         {
             orginal = Input.mousePosition;
-            transform.Rotate(Vector3.up * -5);
+            transform.Rotate(Vector3.up * -spinSpeed);
         }
         else if(Input.mousePosition.x < orginal.x -5f)
         {
             orginal = Input.mousePosition;
-            transform.Rotate(Vector3.up * 5);
+            transform.Rotate(Vector3.up * spinSpeed);
         }
     }
 
