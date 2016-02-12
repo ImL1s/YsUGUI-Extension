@@ -10,6 +10,11 @@ This is unity UGUI extension,can easy lerp image、play button sound.....and mor
  
 You can use this script in anywhere.
 
+你可以隨意使用該插件.
+
+<br />
+
+## Update History
  * Ver 0.1.1
  * date:2016/02/03
  
