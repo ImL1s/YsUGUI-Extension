@@ -3,6 +3,8 @@ This is unity UGUI extension,can easy lerp image、play button sound.....and mor
 
 這是Unity的UGUI插件，可以簡單的漸變image組件、播放button音效...還有更多.
 
+<br />
+
  * Author:ImL1s
  * Email:ImL1s@outlook.com
  
