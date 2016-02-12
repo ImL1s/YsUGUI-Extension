@@ -1,12 +1,19 @@
 # YsUGUI-Extension
+
+### Author Info 作者資訊
+
+ * Author:ImL1s
+ * Email:ImL1s@outlook.com
+ 
+<br />
+
+### Summary 簡介
+ 
 This is unity UGUI extension,can easy lerp image、play button sound.....and more.
 
 這是Unity的UGUI插件，可以簡單的漸變image組件、播放button音效...還有更多.
 
 <br />
-
- * Author:ImL1s
- * Email:ImL1s@outlook.com
  
 You can use this script in anywhere.
 
@@ -14,7 +21,7 @@ You can use this script in anywhere.
 
 <br />
 
-## Update History
+### Update History
  * Ver 0.1.1
  * date:2016/02/03
  
