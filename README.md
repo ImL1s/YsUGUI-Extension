@@ -17,7 +17,7 @@
 ### Summary 簡介
  
 This is unity UGUI extension,can easy lerp image、play button sound.....and more.
->>>>>>> origin/master
+
 
 這是Unity的UGUI插件，可以簡單的漸變image組件、播放button音效...還有更多.
 
@@ -38,6 +38,7 @@ You can use this script in anywhere.
 ## Ver 0.1.5
 
 **ButtonSoundUGUI**
+**date:2016/02/19**
 
 Fixed sound volume
 修正播放音效時聲音過小問題.
