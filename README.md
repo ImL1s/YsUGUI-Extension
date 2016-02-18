@@ -29,30 +29,42 @@ You can use this script in anywhere.
 
 <br />
 
-<<<<<<< HEAD
 
- * Ver 0.1.1 -- date:2016/02/03
- * 
  
-  - New Script ButtonSoundUGUI
-  - Create a new folder: StreamingAssets,and new audioClip:buttonSound
-	<br /> <br /> <br />
-
- * Ver 0.1.0 -- date:2016/02/03
- 
-  -TweenAlphaUGUI
+  -Update History
 =======
 ### Update History
- * Ver 0.1.1
-  date:2016/02/03
+
+## Ver 0.1.5
+
+**ButtonSoundUGUI**
+
+Fixed sound volume
+修正播放音效時聲音過小問題.
+
+**TweenAlphaUGUI**
+
+New API:EndImmediately( ),call it can end animation immedately!
+
+新增API:EndImmediately( )，調用後可以立即將動畫撥放完畢!
+
+**New extendMethod**
+
+新增新的擴展方法 T :GetOrAddComponentEX<T>(GameObject), T
+FindAndGetEX<T>(Transfrom).
+
+<br />
+
+## Ver 0.1.1
+  **date:2016/02/03**
  
   New Script ButtonSoundUGUI
   
   Create a new folder: StreamingAssets,and new audioClip:buttonSound
 
 
- * Ver 0.1.0
-  date:2016/02/03
+## Ver 0.1.0
+  **date:2016/02/03**
 
   TweenAlphaUGUI
->>>>>>> origin/master
+
