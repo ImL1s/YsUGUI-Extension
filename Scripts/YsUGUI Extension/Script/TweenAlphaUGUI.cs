@@ -1,6 +1,7 @@
 ﻿/*
  * Author:ImL1s
  * Email:ImL1s@outlook.com
+ * Description:
  */
 
 using System;
@@ -67,6 +68,19 @@ public class TweenAlphaUGUI : MonoBehaviour
         canLerp = false;
     }
 
+    /// <summary>
+    /// End lerp immediately.
+    /// </summary>
+    public void EndImmediately()
+    {
+        canLerp = false;
+        Debug.Log("EndImmediately" + this.gameObject.name + curve[curve.length - 1].value);
+        image.color = new Color(1, 1, 1, curve.Evaluate(curve[curve.length - 1].value));
+        print(image.color.ToString());
+        this.enabled = false;
+
+    }
+
     #endregion
 
     #region private method
@@ -81,10 +95,13 @@ public class TweenAlphaUGUI : MonoBehaviour
     {
         try
         {
-            float alphaColor = curve.keys[0].value;
+            if (canLerp)
+            {
+                float alphaColor = curve.keys[0].value;
 
-            image.color = new Color(image.color.r, image.color.g, image.color.b, alphaColor);
-            lastTime = curve.keys[curve.keys.Length - 1].time;
+                image.color = new Color(image.color.r, image.color.g, image.color.b, alphaColor);
+                lastTime = curve.keys[curve.keys.Length - 1].time;
+            }
         }
         catch (Exception e)
         {
@@ -149,7 +166,7 @@ public class TweenAlphaUGUI : MonoBehaviour
                 break;
                 
             default:
-                Debug.LogError("Error:Fatal Exception!!A inexistence enum in PlayMode!!;PlayMode:一個不存在的enum值");
+                Debug.LogError("Error:Fatal Exception!!A  enum in PlayMode!!;PlayMode:一個不存在的enum值");
                 break;
         }
     }
