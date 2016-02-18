@@ -1,12 +1,5 @@
 # YsUGUI-Extension
 
-<<<<<<< HEAD
-﻿
-** Author:ImL1s **
-
-** Email:ImL1s@outlook.com **
- 
-=======
 ### Author Info 作者資訊
 
  * Author:ImL1s
@@ -31,14 +24,14 @@ You can use this script in anywhere.
 
 
  
-  -Update History
+  Update History
 =======
-### Update History
+
 
 ## Ver 0.1.5
+**date:2016/02/19**
 
 **ButtonSoundUGUI**
-**date:2016/02/19**
 
 Fixed sound volume
 修正播放音效時聲音過小問題.
