@@ -36,6 +36,7 @@ Please put this plugins under Unity/Asset floder
 **TweenAlphaUGUI**
 
 optimize :Now it will disable when played.
+
 優化性能:如果TweenAlphaUGUI動畫播放完畢，將會將腳本自己取消.
 
 
