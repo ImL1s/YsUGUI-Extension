@@ -31,7 +31,7 @@ Please put this plugins under Unity/Asset floder
 =======
 
 ## Ver 0.1.6
-**date:2016/02/19**
+**date:2016/02/22**
 
 **TweenAlphaUGUI**
 
