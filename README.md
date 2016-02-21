@@ -22,10 +22,24 @@ You can use this script in anywhere.
 
 <br />
 
+Please put this plugins under Unity/Asset floder
+請將本插件放在Unity的Asset目錄下
+
 
  
   Update History
 =======
+
+## Ver 0.1.6
+**date:2016/02/19**
+
+**TweenAlphaUGUI**
+
+optimize :Now it will disable when played.
+優化性能:如果TweenAlphaUGUI動畫播放完畢，將會將腳本自己取消.
+
+
+<br />
 
 
 ## Ver 0.1.5
@@ -33,7 +47,7 @@ You can use this script in anywhere.
 
 **ButtonSoundUGUI**
 
-Fixed sound volume
+Fixed: sound volume
 修正播放音效時聲音過小問題.
 
 **TweenAlphaUGUI**

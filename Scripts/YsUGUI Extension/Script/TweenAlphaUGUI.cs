@@ -53,11 +53,12 @@ public class TweenAlphaUGUI : MonoBehaviour
     #region public method
 
     /// <summary>
-    /// Begin lerp
+    /// Begin lerp 開始撥放漸變.
     /// </summary>
     public void Begin()
     {
         canLerp = true;
+        if (!this.enabled) this.enabled = true;
     }
 
     /// <summary>
@@ -66,18 +67,19 @@ public class TweenAlphaUGUI : MonoBehaviour
     public void Stop()
     {
         canLerp = false;
+        if (this.enabled) this.enabled = false;
     }
 
     /// <summary>
-    /// End lerp immediately.
+    /// End lerp immediately. 馬上將動畫播放至結束.
     /// </summary>
     public void EndImmediately()
     {
         canLerp = false;
-        Debug.Log("EndImmediately" + this.gameObject.name + curve[curve.length - 1].value);
+        //Debug.Log("EndImmediately:" + this.gameObject.name + curve[curve.length - 1].value);
         image.color = new Color(1, 1, 1, curve.Evaluate(curve[curve.length - 1].value));
-        print(image.color.ToString());
-        this.enabled = false;
+        //print(image.color.ToString());
+        if (this.enabled) this.enabled = false;
 
     }
 
@@ -112,8 +114,11 @@ public class TweenAlphaUGUI : MonoBehaviour
 	
 	void Update ()
     {
-        if (!canLerp) return;
-
+        if (!canLerp)
+        {
+            this.enabled = false;
+            return;
+        }
         if (timer >= delayTime)
         {
             Lerp();
@@ -136,6 +141,7 @@ public class TweenAlphaUGUI : MonoBehaviour
 
                 lerpTimer += Time.deltaTime;
                 image.color = new Color(1, 1, 1, curve.Evaluate(lerpTimer / duration));
+                if (image.color.a == curve[curve.length - 1].value) canLerp = false;
 
                 break;
 
@@ -166,7 +172,7 @@ public class TweenAlphaUGUI : MonoBehaviour
                 break;
                 
             default:
-                Debug.LogError("Error:Fatal Exception!!A  enum in PlayMode!!;PlayMode:一個不存在的enum值");
+                Debug.LogError("Error:Fatal Exception!!A nonexistence PlayMode!! 一個不存在的播放模式enum值");
                 break;
         }
     }
